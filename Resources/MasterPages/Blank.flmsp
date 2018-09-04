@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/masterpagetable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-121391607-1">
+        </script>
+        <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-121391607-1', {'anonymize_ip':true});
+		</script>
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../TableStylesheets/masterpagetable.css');" class="TableStyle-masterpagetable" cellspacing="0">
+            <col class="TableStyle-masterpagetable-Column-Column1" style="width: 713px;" />
+            <col class="TableStyle-masterpagetable-Column-Column1" style="width: 227px;" />
+            <tbody>
+                <tr class="TableStyle-masterpagetable-Body-Body1" style="height: 57px;">
+                    <td class="TableStyle-masterpagetable-BodyE-Column1-Body1">
+                        <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+var mailDisplay = 'Provide feedback about this topic.'; 
+document.write( 
+    '<a href="mailto:helpfeedback@boaweb.com' 
+    + '?subject=' + escape(mailSubject) 
+    + '&body=' + escape(mailBody) 
+    + '">' + mailDisplay + '</a>' 
+    );/*]]>*/</script>
+                        <p style="font-weight: normal;">Join the <a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Data Insiders</a> community to collaborate with other data experts.</p>
+                        <p style="font-weight: bold;">
+                            <MadCap:conditionalText MadCap:conditions="Primary.dspConduct">BackOffice Associates® Solutions</MadCap:conditionalText>
+                            <MadCap:conditionalText MadCap:conditions="Primary.ISA">SAP Accelerators by BackOffice Associates®</MadCap:conditionalText> <MadCap:variable name="Primary.Version" /></p>
+                        <p><b>NOTE</b>: Access to pages and visibility of fields may be restricted based on the security settings of the current user.</p>
+                    </td>
+                    <td class="TableStyle-masterpagetable-BodyD-Column1-Body1" style="text-align: right;">&#160;</td>
+                </tr>
+                <tr class="TableStyle-masterpagetable-Body-Body1">
+                    <td class="TableStyle-masterpagetable-BodyA-Column1-Body1" style="text-align: left;" colspan="2">
+                        <MadCap:snippetBlock src="../Snippets/CopyrightFooter.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            
+        </p>
+    </body>
+</html>

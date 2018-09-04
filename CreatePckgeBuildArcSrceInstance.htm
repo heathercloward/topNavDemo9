@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="SystemAdmin _Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="" data-mc-has-content-body="True" data-mc-conditions="Primary.Sys_Admin" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="Skins/Favicons/browserconfig.xml" />
+        <meta name="OriginalFile" content="CTS_Documentation.docx" />
+        <link rel="apple-touch-icon" sizes="180x180" href="Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="SHORTCUT ICON" href="http://dsp700-64bit-sql2014.dsp-cloud.com/dsp/favicon.ico" /><title data-title="BOA Help">Create a CTS Package and Build Archive in Source Instance</title>
+        <link href="Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="Resources/Stylesheets/newDefault.css" rel="stylesheet" />
+        <link href="Resources/TableStylesheets/fielddescription.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/default.css" rel="stylesheet" />
+        <style>A:link
+{
+	color: #0000ff;
+}
+
+A:visited
+{
+	color: #800080;
+}
+
+</style>
+        <script src="Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="Resources/Scripts/require.min.js">
+        </script>
+        <script src="Resources/Scripts/require.config.js">
+        </script>
+        <script src="Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="index.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Start typing to search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div id="topbar">
+                                    <div id="sections_btn_holder">
+                                        <button id="navarrow"><span id="arrow">▼</span>
+                                        </button>
+                                    </div>
+                                    <div id="sections_panel">
+                                        <div id="components">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div id="topbar2">
+            <div id="sections_btn_holder2">
+                <button id="navarrow2"><span id="arrow2">▼</span>
+                </button>
+            </div>
+            <div id="sections_panel2">
+                <div id="components2">
+                    <MadCap:menuProxy style="mc-toc-depth: 2;mc-context-sensitive: False;mc-include-parent: False;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" mc-linked-toc="/Project/TOCs/UseCases.fltoc" />
+                </div>
+            </div>
+        </div> -->
+                                <div class="row collapse">
+                                    <div class="topic-layout" data-sticky-container="">
+                                        <div>
+                                            <h3 class="masterpage" style="text-align: right;" data-mc-conditions="Primary.Online"><a class="logoLinks" href="SysAdmin_Overview.htm">System Administration</a>
+                                            </h3>
+                                            <h1><a name="aanchor2192"></a>
+                                                <MadCap:concept term="CTS" />Create a CTS Package and Build Archive in Source Instance</h1>
+                                            <p>A package is the record and configuration created on the CTS pages in the DSP®. 
+ An <i>archive</i> is built from a package and is the actual item(s) and configurations moved via the CTS process.</p>
+                                            <p>The CTS Configuration for DSP WebApps is included by default and must not be updated on the CTS Configure pages.</p>
+                                            <p>The CTS Configuration for custom WebApps must be created before objects can be moved via the CTS process. Refer to <a href="Set a Baseline CTS Configuration for a Custom WebApp.htm">Set a Baseline Configuration for a Custom WebApp</a>.</p>
+                                            <p>To create a CTS package and build an archive for a delivered WebApp:</p>
+                                            <ol>
+                                                <li value="1">
+                Log in to the DSP® source instance.
+            </li>
+                                                <li value="2">
+                Select <b>Admin &gt; CTS &gt; Build</b> in the <i>Navigation</i> pane.
+            </li>
+                                                <li value="3">
+                Click <b>Add</b>.
+                <p><i><a href="CTS_Build_H.htm">View the field descriptions for the CTS Build page</a></i></p></li>
+                                                <li value="4">
+                Enter a unique name for the CTS package in the <b>DESCRIPTION</b> field.
+                <p class="note"><a name="aanchor2193"></a><MadCap:concept term="Sys Admin" /><b>NOTE:</b> Since the CTS process for all applications on the system is managed within the System Administration Component, it is recommended to include the name of the component (for example, Collect) in the description to easily identify the application(s) relevant to the contents of an archive once it is created. <b>As a best practice, create one package per component.</b></p></li>
+                                                <li value="5">
+                Click <b>Save</b>; the <i>Vertical</i> View displays.
+            </li>
+                                                <li value="6">
+                Verify the <b>Include Objects</b> check box is checked.
+                <p class="note"><b>NOTE:</b> If checked, objects added on the <a href="CTS Configure SQL Object Registrations.htm"><span style="font-style: italic;">CTS Configure 
+ (SQL Object Registrations)</span></a> page are included in the package. </p></li>
+                                                <li value="7">
+                Click the <b>Show Hidden Items</b> check box to check it.
+                <p class="note"><b>NOTE:</b> If checked, CTS items defined as 
+ “hidden” (CTS 
+ &gt; Configuration &gt; Shippable Items &gt; Vertical View) are visible in the packing list. </p></li>
+                                                <li value="8">
+                Enter additional documentation in the <b>Comments</b> field, for example, 
+ a description of what the package contains.
+            </li>
+                                                <li value="9">
+                Select a value from the <b>Trace Level</b> list box. The default value is <span style="font-style: italic;">Warning</span>. Values are:
+                <ul><li value="1"><b>Debug </b>— A detailed message displays to provide data about the process.
+                    </li><li value="2"><b>Message </b>— An information message displays to mark a landmark in the code.
+                    </li><li value="3"><b>Warning 	</b>— A message displays to inform the user that a problem could surface.
+                    </li><li value="4"><b>Error </b>— An error message displays while the process is executing; processing can continue.
+                    </li></ul><p class="note"><b>NOTE:</b> The Trace Level indicates the amount or level of detail of information that is provided in the log (which is accessed by clicking the <b>Log</b> icon on the <i style="font-weight: normal; font-style: italic;"><a href="CTS_Build_H.htm">CTS Build</a></i> page's <span style="font-style: italic;">Horizontal View</span>) 
+ if an error occurs when building the packing list and the archive. The order of details provided is Error, Warning, Message and Debug, where Error provides the least amount of information and Debug provides the greatest amount of information.</p></li>
+                                                <li value="10">
+                Click <b>Save</b>.
+            </li>
+                                                <li value="11">
+                Click <b>Items</b> on the <i>Horizontal View</i> to specify the item(s) to include in the package.
+            </li>
+                                                <li value="12">
+                Click <b>Add</b>. If no records exist, the page automatically opens in add mode.
+                <p><a href="CTS_Items_H.htm" style="font-style: italic;">View the field descriptions for the CTS Items page</a></p></li>
+                                                <li value="13">
+                Select an item to include in the package from the <b>CTS CONFIG ITEM ID</b> list box.
+</li>
+                                            </ol>
+                                            <p class="note"><b>NOTE:</b> To move the wave initially, select <b>Console – Wave</b> from this list box, then select the wave’s key on the <i><a href="CTS_Item_Keys.htm">CTS Item Keys</a></i> page.</p>
+                                            <p class="note"><b>NOTE:</b> The CTS CONFIG ITEM ID list box displays every item available to be moved via the CTS process for every component.</p>
+                                            <p class="note"><b>NOTE:</b> Items in this list box display with the following names:</p>
+                                            <ul>
+                                                <li value="1">DataGarage refers to Collect objects</li>
+                                                <li value="2">DSW refers to Transform objects</li>
+                                                <li value="3">
+                                                    <MadCap:conditionalText data-mc-conditions="Primary.dspMonitor">DataDialysis refers to dspMonitor</MadCap:conditionalText>
+                                                    <MadCap:conditionalText data-mc-conditions="Primary.dspMonitor">™</MadCap:conditionalText>
+                                                    <MadCap:conditionalText data-mc-conditions="Primary.dspMonitor"> objects</MadCap:conditionalText>
+                                                </li>
+                                                <li value="4">DSPCommon refers to Common objects</li>
+                                                <li value="5">CranSoft refers to platform objects</li>
+                                            </ul>
+                                            <p>Use the following table to add the pre-defined items from the CTS CONFIG ITEM ID list box to the CTS package for each application.</p>
+                                            <p><b>NOTE:</b> Follow the order in which the applications are listed in this table when adding applications and items.</p>
+                                            <table class="TableStyle-fielddescription" cellspacing="0" width="677" style="mc-table-style: url('Resources/TableStylesheets/fielddescription.css');">
+                                                <col class="TableStyle-fielddescription-Column-Column1" />
+                                                <col class="TableStyle-fielddescription-Column-Column2" />
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Application</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableColumn">Items to add to the CTS package</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Common</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">DSPCommon — dspCommon System Type</p>
+                                                        <p class="TableText">DSPCommon — Common System Type Table</p>
+                                                        <p class="TableText">DSPCommon — Common System Type Group</p>
+                                                        <p class="TableText">DSPCommon — Common System Type Table Index</p>
+                                                        <p class="TableText">DSPCommon — Schedule</p>
+                                                        <p class="TableText">DSPCommon — Common Automation Instructions</p>
+                                                        <p class="TableText">DSPCommon — Common Automation Instruction Task</p>
+                                                        <p class="TableText">DSPCommon — Common Automation Instruction Task Group</p>
+                                                        <p class="TableText">DSPCommon — Common Automation Engine Action</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Collect</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">DataGarage — Collect Target</p>
+                                                        <p class="TableText">DataGarage — Collect – 
+		 Target Source</p>
+                                                        <p class="TableText">DataGarage — Target Source Table</p>
+                                                        <p class="TableText">DataGarage — Target Source Table Rule</p>
+                                                        <p class="TableText">DataGarage — Target Source Table Index</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Console</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">Console — Field Group</p>
+                                                        <p class="TableText">Console — Metric Group</p>
+                                                        <p class="TableText">Console — Process Area</p>
+                                                        <p class="TableText">Console — Object</p>
+                                                        <p class="TableText">Console — Target</p>
+                                                        <p class="TableText">Console — Source</p>
+                                                        <p class="TableText">Console — Wave</p>
+                                                        <p class="TableText">Console — Wave Process Area</p>
+                                                        <p class="TableText">Console — Wave Process Area Object</p>
+                                                        <p class="TableText">Console — Wave Process Area Object Target</p>
+                                                        <p class="TableText">Console — Wave Process Area Object Target Source</p>
+                                                        <p class="TableText">Console — Execution Stage</p>
+                                                        <p class="TableText">Console — Complex Rule</p>
+                                                        <p class="TableText">Console — Simple Rule</p>
+                                                        <p class="TableText">Console — Rule Condition</p>
+                                                        <p class="TableText">Console — Target Lookup Table</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Map</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">cMap — Wave Process Area Object</p>
+                                                        <p class="TableText">cMap — Value Mapping Check Table</p>
+                                                        <p class="TableText">cMap — Wave Process Area Object Target</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Assemble</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">CranPort 
+		  Packages</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Automate	</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p width="456" class="TableText">InterfaceServer — File Operation
+</p>
+                                                        <p width="456" class="TableText">InterfaceServer — Interface
+</p>
+                                                        <p width="456" class="TableText">InterfaceServer — Logical Path
+
+</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">dspCompose™</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">dspCompose — Team</p>
+                                                        <p class="TableText">dspCompose — OrgUnits</p>
+                                                        <p class="TableText">dspCompose — Roles</p>
+                                                        <p class="TableText">dspCompose — dspCompose Template</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1" data-mc-conditions="Primary.dspMonitor">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">dspMonitor™</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText" style="mso-comment-continuation: 2;mso-fareast-font-family: Arial;">DataDialysis — Group</p>
+                                                        <p class="TableText" style="mso-comment-continuation: 2;mso-fareast-font-family: Arial;">DataDialysis — Object</p>
+                                                        <p class="TableText">DataDialysis — Report Repository</p>
+                                                        <p class="TableText" style="mso-comment-continuation: 2;mso-fareast-font-family: Arial;">DataDialysis — Report</p>
+                                                        <p class="TableText" style="mso-comment-continuation: 2;mso-fareast-font-family: Arial;">DataDialysis — Filter</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Integrate</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">Integrate — Integrate Category</p>
+                                                        <p class="TableText">Integrate — Integrate Template</p>
+                                                        <p class="TableText">Integrate — Integrate Process</p>
+                                                        <p class="TableText">Integrate — Integrate Process Template Connection</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn" style="color: #000000;font-weight: bold;text-decoration: none;"><a style="color: #000000;font-weight: bold;text-decoration: none;">Transform</a>
+                                                        </p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">DSW — Object</p>
+                                                        <p class="TableText">DSW — Target</p>
+                                                        <p class="TableText">DSW — Target Report</p>
+                                                        <p class="TableText">DSW — Target Rule</p>
+                                                        <p class="TableText">DSW — Target Export</p>
+                                                        <p class="TableText">DSW — Target Data Services Report</p>
+                                                        <p class="TableText">DSW — Target Data Services Rule</p>
+                                                        <p class="TableText">DSW — Target Source</p>
+                                                        <p class="TableText">DSW — Target Source Report</p>
+                                                        <p class="TableText">DSW — Target Source Rule</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1" data-mc-conditions="Primary.dspConduct">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn" style="mso-comment-reference: GRG_4;">dspConduct™</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 1.Category</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 2.Business Processes</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 3.Scenarios</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 4.Roles</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 5.Tasks</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 6.Org Units</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — 7.Positions</p>
+                                                        <p class="TableText" style="font-family: Arial, sans-serif;">dspConduct — Org Unit Groups</p>
+                                                        <p class="TableText">dspConduct — Workflow Defaults</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-fielddescription-Body-Body1" data-mc-conditions="">
+                                                    <td width="144" class="TableStyle-fielddescription-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Platform</p>
+                                                    </td>
+                                                    <td width="456" class="TableStyle-fielddescription-BodyD-Column2-Body1">
+                                                        <p class="TableText">CranSoft — Archive
+</p>
+                                                        <p class="TableText">CranSoft — Audit
+</p>
+                                                        <p class="TableText">CranSoft — Catalog
+</p>
+                                                        <p class="TableText">CranSoft — Color
+</p>
+                                                        <p class="TableText">CranSoft — CTS Configuration
+</p>
+                                                        <p class="TableText">CranSoft — Data
+</p>
+                                                        <p class="TableText">CranSoft — Data Source
+</p>
+                                                        <p class="TableText">CranSoft — Database Type
+</p>
+                                                        <p class="TableText">CranSoft — Dictionary
+</p>
+                                                        <p class="TableText">CranSoft — File
+</p>
+                                                        <p class="TableText">CranSoft — Folder
+</p>
+                                                        <p class="TableText">CranSoft — Group
+</p>
+                                                        <p class="TableText">CranSoft — Image
+</p>
+                                                        <p class="TableText">CranSoft — Language
+</p>
+                                                        <p class="TableText">CranSoft — Layout
+</p>
+                                                        <p class="TableText">CranSoft — Menu
+</p>
+                                                        <p class="TableText">CranSoft — Message Types
+</p>
+                                                        <p class="TableText">CranSoft — Page
+</p>
+                                                        <p class="TableText">CranSoft — Page Column Property
+</p>
+                                                        <p class="TableText">CranSoft — Page Event
+</p>
+                                                        <p class="TableText">CranSoft — Plugin
+</p>
+                                                        <p class="TableText">CranSoft — Queue
+</p>
+                                                        <p class="TableText">CranSoft — Search
+</p>
+                                                        <p class="TableText">CranSoft — Security Definition
+</p>
+                                                        <p class="TableText">CranSoft — Security Role
+</p>
+                                                        <p class="TableText">CranSoft — SQL Object
+</p>
+                                                        <p class="TableText">CranSoft — SQL Script
+</p>
+                                                        <p class="TableText">CranSoft — Stop Word List
+</p>
+                                                        <p class="TableText">CranSoft — Style
+</p>
+                                                        <p class="TableText">CranSoft — Translation
+</p>
+                                                        <p class="TableText">CranSoft — WebApp
+</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <ol start="14">
+                                                <li value="14">
+                Update the <b>Include</b> check box if the default value is not applicable.
+                <p class="note"><b>NOTE:</b> If checked, the relevant item is included when the packing list is built. If unchecked, the item is ignored when the packing list is built. Default value is enabled.</p></li>
+                                                <li value="15">
+                Click <b>Save</b>; the <i>Vertical</i> view displays.
+                <p><a href="CTS_Items_H.htm" style="font-style: italic;">View the field descriptions for the CTS Items page's Vertical View</a></p></li>
+                                                <li value="16">
+                Update the <b>Purge</b> check box if the default value is not applicable.
+                <p class="note"><b>NOTE:</b> If checked, any child items related to the item that had Purge enabled are deleted when the archive is installed.</p></li>
+                                                <li value="17">
+               Click <b>Save</b>.
+            </li>
+                                                <li value="18">Add additional items from the <b>CTS CONFIG ITEM ID</b> list box or click <b>Cancel</b> 
+ to configure keys for the items.</li>
+                                                <li value="19">
+                Click the <b>Keys</b> icon for the <span style="font-weight: bold;">CTS CONFIG ITEM ID</span>.
+                <p class="note"><b>NOTE:</b> All required keys for the item display. Multiple keys may display, depending on the type of item included in the package. The keys required for each item are set in the CTS Configuration.</p></li>
+                                                <li value="20">
+                Click <b>Edit</b> for the key.
+                <p><a href="CTS_Item_Keys.htm" style="font-style: italic;">View the field descriptions for the CTS Item Keys page</a></p></li>
+                                                <li value="21">
+                Select the specific item from the <b>VALUE</b> combo box.
+            </li>
+                                                <li value="22">
+                Click <b>Save</b>.
+                <p class="note"><b>NOTE:</b> Each specific item included in the package has to be added individually to the <span style="font-style: italic;"><a href="CTS_Items_H.htm">CTS Items</a></span> page. There is no process to add all items 
+ to a CTS package.</p></li>
+                                                <li value="23">
+                Click <b>Build</b> in the <i>Navigation</i> pane.
+            </li>
+                                                <li value="24">
+                Click the <b>Build Packing List</b> icon to create a list of items and dependencies to include in the package; a confirmation message displays.
+            </li>
+                                                <li value="25">
+                Click <b>OK</b>.
+            </li>
+                                                <li value="26">
+                Click <b>Log</b> to view any messages or errors.
+            </li>
+                                            </ol>
+                                            <p>Continue with <a href="Add_Attributes.htm">Add Attributes</a> (optional) or <a href="Review_Packing_List_to_Exclude_Specific_Items.htm">Review Packing List to Exclude Specific Items</a>.</p>
+                                            <!--     <div id="feedback-survey">
+                        <div class="feedback-question">
+                            <p class="feedback-question">Was this article helpful?</p>
+                            <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                            <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                        </div>
+                        <div class="feedback-reason no">
+                            <div>
+                                <p class="feedbackW">Sorry about that.</p>
+                                <p>Why wasn't this helpful? (check all that apply)</p>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                    <label for="option1">Couldn't find what I was looking for</label>
+                                </div>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                    <label for="option2">Instructions wrong or confusing.</label>
+                                </div>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                    <label for="option3">Needs more content.</label>
+                                </div>
+                                <div class="feedback-reason no-thanks">
+                                    <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                    </p>
+                                    <p class="feedbackW">Want to tell us more?</p>
+                                    <p>Send an email to our authors to leave your feedback.</p>
+                                    <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-reason yes-thanks">
+                            <p class="feedbackW">Great!
+							</p>
+                            <p>Thanks for your feedback.</p>
+                        </div>
+                    </div>  -->
+                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                            <div class="cta" id="feedback">
+                                                <p>
+                                                    <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="nocontent menu _Skins_ContextMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer" id="sticky_bottom">
+                                    <div class="topicFooter">
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <h5>Get in Touch</h5>
+                                            <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                                            </p>
+                                            <p class="footer"><a href="Resources/Ideas_Portal.htm">Access Product Ideas Portal</a>
+                                            </p>
+                                            <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                                            </p>
+                                            <h5>Related Content</h5>
+                                            <p class="footer"><a href="glossary.htm" target="_blank">Glossary</a>
+                                            </p>
+                                            <p class="footer"><a href="When_to_request_a_new_product_license.htm">Product Licenses</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer" id="di">&#160;
+					</p>
+                                            <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <img src="Resources/Images/topNav/BOA_Logo-223x50-Blue.png" />
+                                            </p>
+                                            <p class="footer">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                                            <p class="footer copyright">
+                                                <p class="footer"><span class="PrimaryCopyright Date">Copyright © 2018</span> BackOffice Associates, LLC and/or its affiliates. All rights reserved. </p>
+                                                <p class="footer">The DSP logo is a registered trademark of BackOffice Associates®. Other names appearing on the Site may be trademarks of their respective owners.</p>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/">Privacy Policy</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/">Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/">Terms of Use</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script type="text/javascript" src="https://www.google.com/jsapi">
+                                </script>
+                                <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+                                <script type="text/javascript" src="Resources/Scripts/custom.js">
+                                </script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
